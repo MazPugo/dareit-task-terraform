@@ -1,7 +1,19 @@
+provider "google" {
+  project = "neat-resolver-378118"
+  region  = "europe-west2"
+  zone    = "europe-west2-c"
+}
+
+resource "google_storage_bucket" "my-bucket" {
+  name = "my-bucket"
+  location = "EU"
+  storage_class = "STANDARD"
+} 
+
 
 resource "google_compute_instance" "dareit-vm-ci" {
   name         = "dareit-vm-tf-ci"
-  machine_type = "e2-medium"
+  machine_type = "e2-medium
   zone         = "europe-west2-c"
 
   tags = ["dareit"]
@@ -20,6 +32,6 @@ resource "google_compute_instance" "dareit-vm-ci" {
 
     access_config {
       // Ephemeral public IP
+      }
     }
-  }
-}
+  
