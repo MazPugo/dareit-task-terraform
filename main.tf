@@ -12,9 +12,8 @@ default= ""
 }
 
 
-
-resource "google_storage_bucket" "terraform2023" {
-  name = "terraform2023bucket"
+resource "google_storage_bucket" "dareit-website" {
+  name = "Maz-website"
   location = "europe-west2"
   storage_class = "STANDARD"
   labels = {
