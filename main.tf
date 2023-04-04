@@ -1,4 +1,28 @@
 
+provider "google" {
+  project = "neat-resolver-378118"
+  region  = "europe-west2"
+  zone    = "europe-west2-c"
+  credentials = var.gcp-creds
+}
+
+
+variable "gcp-creds" {
+default= ""
+}
+
+
+
+resource "google_storage_bucket" "terraform2023" {
+  name = "terraform2023bucket"
+  location = "europe-west2"
+  storage_class = "STANDARD"
+  labels = {
+   "key1" = "value1"
+   "key2" = "value2"
+ }
+} 
+
 resource "google_compute_instance" "dareit-vm-ci" {
   name         = "dareit-vm-tf-ci"
   machine_type = "e2-medium"
