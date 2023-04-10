@@ -14,4 +14,14 @@ terraform {
       version = "4.41.0"
     }
   }
+<<<<<<< Updated upstream
 }
+=======
+<<<<<<< Updated upstream
+}
+=======
+}
+
+ 
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
