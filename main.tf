@@ -1,8 +1,8 @@
 
 resource "google_compute_instance" "dareit-vm-ci" {
-  name         = "dareit-vm-tf-ci"
+  name = "dareit-vm-tf-ci"
   machine_type = "e2-medium
-  zone         = "europe-west2-c"
+  zone = "europe-west2-c"
   tags = ["dareit"]
   boot_disk {
     initialize_params {
