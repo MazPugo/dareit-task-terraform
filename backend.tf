@@ -1,4 +1,4 @@
-terraform {
+/*terraform {
   required_version = ">= 1.0.11"
   backend "gcs" {
     bucket = "mo-terraform-state-file"
@@ -20,7 +20,7 @@ terraform {
 <<<<<<< Updated upstream
 }
 =======
-}
+}*/
 
  
 >>>>>>> Stashed changes
